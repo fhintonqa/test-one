@@ -60,3 +60,26 @@ if (username === 'testUsername' && password === 'correctPass') {
         default:
             console.log('❓ Unknown test result');
   }
+
+// Logical operators - combining conditions
+let pageLoaded = true;
+let elementVisible= true;
+let dataReady = false;
+
+// AND Operator - all condition must be true
+if (pageLoaded && elementVisible && dataReady) {
+    console.log('✅ Ready to run test');
+    } else {
+        console.log('⏳ Waiting for conditions ...');
+    }
+
+// OR Operator - at least one condition must be true
+if (username === 'admin' || username === 'testUser123') {
+    console.log('✅ Authorized user');
+}
+
+// NOT Operator - reverse the condition
+if (!dataReady) {
+    console.log('⏳ Still loading data...');
+}
+
