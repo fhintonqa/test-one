@@ -32,7 +32,7 @@ function log(message) {
   });
 
   input.addEventListener('keyup', (event) => {
-    log('Key released:', event.code);
+    log('Key released:', event);
     log('Updated value:', input.value);
   });
 
