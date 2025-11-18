@@ -34,13 +34,14 @@ const testConfig = {
     retries: 3,
     browser: 'chromium'
 };
-
-const baseUrl = testConfig.baseUrl;
-const timeout = testConfig.timeout;
+// old way
+// const baseUrl = testConfig.baseUrl;
+// const timeout = testConfig.timeout;
 // console.log(baseUrl, timeout);
 
-// const { baseUrl, timeout} = testConfig;
-// console.log(baseUrl, timeout);
+// new way
+const { baseUrl, timeout} = testConfig;
+console.log(baseUrl, timeout);
 
 // 4. Spread Operator (...)
 
@@ -52,7 +53,7 @@ const allTests = [...basicTests, ...advanceTests, 'security_test'];
 
 const defaultConfig = {timeout: 30000, retries: 3};
 const customConfig = {...defaultConfig, browser: 'firefox', };
-// console.log(customConfig);
+console.log(customConfig);
 
 //5. Default parameters
 
